@@ -1,4 +1,4 @@
-poodr
+poodp
 =====
 
-Practical Object-Oriented Design in Ruby
+Practical Object-Oriented Design in Perl 5
