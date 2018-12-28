@@ -12,4 +12,3 @@ $chainring    = 30;
 $cog          = 27;
 $ratio        = $chainring / $cog;
 say $ratio;
-

@@ -1,24 +1,23 @@
-package Gear;
-use Mouse;
+{
+    package Gear;
+    use Mouse;
 
-has chainring => (
-    is => 'ro',
-    required => 1
-);
+    has chainring => (
+        is => 'ro',
+        required => 1
+    );
 
-has cog => (
-    is => 'ro',
-    required => 1
-);
+    has cog => (
+        is => 'ro',
+        required => 1
+    );
 
-sub ratio {
-    my $self = shift;
-    $self->chainring / $self->cog;
+    sub ratio {
+        my $self = shift;
+        $self->chainring / $self->cog;
+    }
 }
 
-1;
-
-package main;
 use feature 'say';
 
 say Gear->new(chainring => 52, cog => 11)->ratio;
